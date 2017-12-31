@@ -6,10 +6,11 @@ class PostsController < ApplicationController
 	def create 
 		@post = Post.new(strong_params)
 		if @post.save
-			redirect_to @post
-		else
-			redirect_to posts_path
-		end
+	      respond_to do |format|      
+	      	format.html { redirect_to @post, notice: 'El post fue creado!' }
+	        format.js 
+	      end
+	    end
 	end
 
 	def show
