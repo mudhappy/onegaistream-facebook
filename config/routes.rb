@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
 	resources :posts
 	# Otro Post#show 
-	get "λ/:id", to: "posts#show"
+	get "/:id", to: "posts#show"
 end
