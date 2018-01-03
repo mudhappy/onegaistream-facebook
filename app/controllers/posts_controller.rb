@@ -15,6 +15,9 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.friendly.find(params[:id])
+		@post.incrementa_visita
+
+		@video_exist = (@post.url.start_with?("https://video.flim")) ? true : false 
 	end
 
 

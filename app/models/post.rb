@@ -9,10 +9,20 @@ class Post < ApplicationRecord
 	extend FriendlyId
 	friendly_id :title, use: :slugged
 
+
+	def incrementa_visita
+		self.counter+=1
+		save!
+	end
+
 	private 
 
 	def set_empty_title
-		self.title = [*('a'..'z'),*('0'..'9')].shuffle[0,5].join
+		if self.title.empty?
+			self.title = [*('a'..'z'),*('0'..'9')].shuffle[0,5].join
+			self.empty_title = true
+		end
 	end
+
 	
 end
