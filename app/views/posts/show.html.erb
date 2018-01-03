@@ -1,17 +1,11 @@
-<center>
-	<h1>Onegai.stream</h1>
-	<h4>
-		<% if @post.empty_title %>
-			<p>Quieres crear tu propia url? <%= link_to "Click aqui", root_path %></p>
+<div class="content-wrapper">
+	<div class="content">
+		<p class="visto">Visto <%= @post.counter %> veces</p>
+
+		<% if @video_exist  %>
+			<video src="<%= @post.url %>"></video>
 		<% else %>
-			<%= @post.title %>
+			<p><%= @post.url %></p>
 		<% end %>
-	</h4>
-	<p>Visto <%= @post.counter %> veces</p>
-	
-	<% if @video_exist  %>
-		<video src="<%= @post.url %>"></video>
-	<% else %>
-		<p><%= @post.url %></p>
-	<% end %>
-</center>
+	</div>
+</div>

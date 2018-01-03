@@ -1,10 +1,10 @@
 <%= form_with( model: @post, :html => {id: "posts-form"}) do |f| %>
 	<div>
-		<%= f.label :title %>
+		<%= f.label :title, "Título del nuevo enlace (opcional)" %>
 		<%= f.text_field :title %>
 	</div>
 	<div>
-		<%= f.label :url %>
+		<%= f.label :url, "URL" %>
 		<%= f.text_field :url, required: true %>
 	</div>
 	<div>
