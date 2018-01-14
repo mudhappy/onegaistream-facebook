@@ -1,5 +1,10 @@
-<div>
-	<strong>Link creado:</strong>
+<div class="confirmacion__item ed-item full">
 	<% post_url = request.base_url + "/" + @post.slug %>
-	<%= link_to post_url, post_url, target: '_new' %>
+	<%= link_to post_url, post_url, target: '_new', class: "confirmacion__link" %>
 </div>
+<style type="text/css">
+.confirmacion
+{
+	display: block;
+}
+</style>

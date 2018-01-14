@@ -1,9 +1,9 @@
 <%= form_with( model: @post, :html => {id: "posts-form", class:"ed-container main-center main-form"}) do |f| %>
 	
-	<div class="ed-item s-75">
+	<div class="ed-item m-75 s-100">
 		<%= f.text_field :url, required: true, class: "main-form__url", placeholder: "Pega aquí tu url original ..." %>
 	</div>
-	<div class="ed-item s-25">
+	<div class="ed-item m-25 s-100">
 		<%= f.submit "ACORTA LA URL", class: "main-form__submit" %>
 	</div>
 	
