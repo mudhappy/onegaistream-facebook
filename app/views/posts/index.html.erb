@@ -1,7 +1,8 @@
-<div>
+<div class="main-page">
 	<div>
 		<%= render "form" %>
-		<div id="confirmacion"></div>
+	
+		<div id="confirmacion" class="ed-container"></div>
 
 		<% if @video_exist  %>
 			<video src="<%= @post.url %>"></video>

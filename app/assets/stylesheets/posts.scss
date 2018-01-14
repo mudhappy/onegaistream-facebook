@@ -1,3 +1,77 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-container
+{
+    flex: 1 0 auto;
+}
+
+.main-form
+{
+    width: 800px;
+    max-width: 95%;
+
+    &__url
+    {
+        width: 100%;
+        border-radius: 7px;
+        padding: 14px 23px;
+        border: 0;
+        font-size: 16px;
+    }
+
+    ::-webkit-input-placeholder,::-moz-placeholder,:-ms-input-placeholder,:-moz-placeholder {
+        color: #a3a3a3;
+    }
+   
+    &__submit
+    {
+        width: 100%;
+        border-radius: 7px;
+        color: white;
+        background-color: $secondary-color;
+        height: 44px;
+        line-height: 44px;
+        border: 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        box-shadow: 0px 3px 13px rgba(black,.3);
+    }
+}
+
+.opcional-form
+{
+    margin-top: 10px;
+    text-align: left;
+
+    label
+    {
+        background: none;
+        font-size: 14px;
+        line-height: 23px;
+        color: #737373;
+        border: 0;
+        padding: 0;
+
+        span
+        {
+            letter-spacing: 2px;
+            margin-left: 10px;
+        }
+    }
+    &__title
+    {
+        font-size: 14px;
+        height: 23px;
+        line-height: 23px;
+        padding: 10px;
+        border-radius: 7px;
+        border: 0;
+        width: 140px;
+
+        ::-webkit-input-placeholder,::-moz-placeholder,:-ms-input-placeholder,:-moz-placeholder {
+            color: #a3a3a3;
+        }
+    }
+}

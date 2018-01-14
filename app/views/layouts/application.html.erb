@@ -6,13 +6,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
 
   <body>
-  	<header>
-		<h1>Acortador de Url</h1>
-		<h3>Onegai.stream</h3>
-	</header>
-    <%= yield %>
+  	<header class="header main-center cross-center">
+      <h1 class="header__title">
+        <%= link_to "O.li", root_path, class: "header__link" %>
+      </h1>
+      <h2 class="header__subtitle">the best shortening of urls</h2>
+    </header>
+    
+    <div class="main-container">
+      <%= yield %>
+    </div>
+
+    <footer class="footer">
+      <p>© 2018 Oli™</p>
+    </footer>
   </body>
 </html>

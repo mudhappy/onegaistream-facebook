@@ -1,0 +1,21 @@
+.header
+{
+    &__title, &__subtitle
+    {
+        font-family: $primary-font;
+    }
+
+    &__title
+    {
+        font-size: 60px;
+        padding-right: 16px;
+    }
+
+    &__subtitle
+    {
+        font-size: 18px;
+        padding-left: 16px;
+        border-left: 1px solid $white;
+        line-height: 37px;
+    }
+}

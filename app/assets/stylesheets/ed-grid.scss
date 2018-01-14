@@ -16,10 +16,6 @@
     text-decoration:none;
   }
   
-  a:hover{
-    text-decoration:underline;
-  }
-  
   body.desarrollo .ed-container:before,body.desarrollo .ed-item:before,body.desarrollo:before,body.dev .ed-container:before,body.dev .ed-item:before,body.dev:before{
     content:attr(class);
     font-style:italic;
@@ -57,14 +53,6 @@
   .ed-item.ed-container{
     padding-left:0;
     padding-right:0;
-  }
-  .button,.button.radius,.button.round,button,button.radius,button.round{
-    display:inline-block;
-    padding:.8em 1.6em;
-    cursor:pointer;
-    margin:1em;
-    border:none;
-    text-decoration:none;
   }
   
   .s-offset-5{
@@ -1457,53 +1445,6 @@
   body.desarrollo .ed-item:nth-child(2n):before,body.dev .ed-item:nth-child(2n):before{
     background:rgba(70,130,180,.4);
     color:#4682b4;
-  }
-  
-  .button,button{
-    background:#ddd;
-    color:#333;
-  }
-  
-  .button:hover,button:hover{
-    background:#d0d0d0;
-    text-decoration:none;
-  }
-  
-  .button:active,button:active{
-    -webkit-transform:scale(.97);
-            transform:scale(.97);
-  }
-  
-  .button.round,button.round{
-    background:#ddd;
-    color:#333;
-    border-radius:1.25em;
-  }
-  
-  .button.round:hover,button.round:hover{
-    background:#d0d0d0;
-    text-decoration:none;
-  }
-  
-  .button.round:active,button.round:active{
-    -webkit-transform:scale(.97);
-            transform:scale(.97);
-  }
-  
-  .button.radius,button.radius{
-    background:#ddd;
-    color:#333;
-    border-radius:.25em;
-  }
-  
-  .button.radius:hover,button.radius:hover{
-    background:#d0d0d0;
-    text-decoration:none;
-  }
-  
-  .button.radius:active,button.radius:active{
-    -webkit-transform:scale(.97);
-            transform:scale(.97);
   }
   
   .ed-menu.s-horizontal{
